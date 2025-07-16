@@ -1,4 +1,5 @@
 import { Box, Text } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -45,12 +46,12 @@ const Navbar = () => {
           </Text>
         </a>
 
-        <a href="">
-          <Text className="text-[#000] text-[24px] flex items-center gap-2 py-3">
+          <Link to="/payments">
+          <Text className="text-[#000] text-[24px] flex items-center gap-2 py-3 cursor-pointer">
             <img src="/credit-card-pos.svg" alt="" className="w-5 h-5" />
-            Payments & Subscription
+            Payments
           </Text>
-        </a>
+        </Link>
 
         <a href="">
           <Text className="text-[#000] text-[24px] flex items-center gap-2 py-3">

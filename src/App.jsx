@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import StudentStats from '../src/components/StudentStats';
 import ViewedDetailed from '../src/components/ViewedDetailed';
 import Herosection from './Sections/Herosection';
+import CreatePaymentPlan from './Sections/CreatePaymentPlan';
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
         </Box>
 
         {/* Main content area with routing */}
-        <Box className="mx-auto ml-[402px] max-w-7xl w-full">
+        <Box className="max-w-7xl w-full">
           {/* Top search bar */}
           <Herosection />
 
@@ -24,6 +25,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<StudentStats />} />
             <Route path="/assessment-1" element={<ViewedDetailed />} />
+            <Route path="/payments" element={<CreatePaymentPlan />} />
           </Routes>
         </Box>
       </Box>
