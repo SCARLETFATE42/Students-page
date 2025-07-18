@@ -11,6 +11,7 @@ import {
   Container,
 } from "@mantine/core";
 import ProcessRefund from "./Processrefund";
+import PaymentPlan from "./Paymentplan";
 
 const CreatePaymentPlan = () => {
   const [programType, setProgramType] = useState("");
@@ -110,7 +111,7 @@ const CreatePaymentPlan = () => {
 
       {/* ✅ Pass name and programType to ProcessRefund */}
       <ProcessRefund prefillName={name} prefillProgram={programType} />
-      
+      <PaymentPlan />
     </>
   );
 };
