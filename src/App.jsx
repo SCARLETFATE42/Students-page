@@ -17,7 +17,7 @@ const App = () => {
         </Box>
 
         {/* Main content area with routing */}
-        <Box className="max-w-7xl w-full">
+        <Box className="max-w-7xl w-full pb-8">
           {/* Top search bar */}
           <Herosection />
 
