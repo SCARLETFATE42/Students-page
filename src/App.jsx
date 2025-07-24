@@ -6,6 +6,7 @@ import StudentStats from '../src/components/StudentStats';
 import ViewedDetailed from '../src/components/ViewedDetailed';
 import Herosection from './Sections/Herosection';
 import CreatePaymentPlan from './Sections/CreatePaymentPlan';
+import Modalpopup from './Sections/Modalpopup';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
         </Box>
 
         {/* Main content area with routing */}
-        <Box className="max-w-7xl w-full pb-8">
+        <Box className="max-w-7xl mx-auto pb-8">
           {/* Top search bar */}
           <Herosection />
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/" element={<StudentStats />} />
             <Route path="/assessment-1" element={<ViewedDetailed />} />
             <Route path="/payments" element={<CreatePaymentPlan />} />
+            <Route path="/payments" element={<Modalpopup />} />
           </Routes>
         </Box>
       </Box>
