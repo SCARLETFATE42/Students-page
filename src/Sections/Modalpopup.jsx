@@ -10,6 +10,7 @@ const Modalpopup = () => {
       <Modal
       size={896}
       radius={12}
+      transitionProps={{ transition: 'fade', duration: 200, timingFunction: 'linear' }}
       opened={opened} onClose={close} title={
         <Box className='flex flex-col items-start gap-2 p-6'>
             <Text className="!text-[18.75px] !text-[#020817] !font-semibold">Request for assignment extension</Text>

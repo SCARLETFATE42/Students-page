@@ -6,7 +6,8 @@ import StudentStats from '../src/components/StudentStats';
 import ViewedDetailed from '../src/components/ViewedDetailed';
 import Herosection from './Sections/Herosection';
 import CreatePaymentPlan from './Sections/CreatePaymentPlan';
-import Modalpopup from './Sections/Modalpopup';
+// import Modalpopup from './Sections/Modalpopup';
+import Assessmentpage from "./Sections/Assessmentpage";
 
 const App = () => {
   return (
@@ -26,8 +27,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<StudentStats />} />
             <Route path="/assessment-1" element={<ViewedDetailed />} />
+            <Route path="/assessments" element={<Assessmentpage />} />
             <Route path="/payments" element={<CreatePaymentPlan />} />
-            <Route path="/payments" element={<Modalpopup />} />
+            {/* <Route path="/payments" element={<Modalpopup />} /> */}
           </Routes>
         </Box>
       </Box>

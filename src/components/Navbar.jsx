@@ -66,6 +66,12 @@ const Navbar = () => {
             Support & Community
           </Text>
         </a>
+        <Link to="/assessments">
+          <Text className="text-[#000] text-[24px] flex items-center gap-2 py-3 cursor-pointer">
+            <img src="/message-multiple-0.svg" alt="" className="w-5 h-5" />
+            Assessments
+          </Text>
+        </Link>
       </Box>
     </Box>
   );
